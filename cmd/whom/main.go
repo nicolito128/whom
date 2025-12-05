@@ -1,9 +1,7 @@
 package main
 
-import (
-	"github.com/nicolito128/whom/pkg/cli"
-)
+import "github.com/nicolito128/whom/pkg/cmd"
 
 func main() {
-	cli.Run()
+	cmd.Execute()
 }

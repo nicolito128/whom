@@ -6,7 +6,6 @@ package gens
 import (
 	_ "embed"
 	"fmt"
-	"log"
 	"os"
 	"strings"
 )
@@ -28,8 +27,6 @@ func GenerateBaseProject(name string) error {
 			return fmt.Errorf("directory %s already exists and is not empty", name)
 		}
 	}
-
-	log.Println("Generating base project:", name)
 
 	dir := fmt.Sprintf("./%s/pods", name)
 	if err := os.MkdirAll(dir, os.ModePerm); err != nil {

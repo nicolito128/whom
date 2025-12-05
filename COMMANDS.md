@@ -10,10 +10,13 @@
 
         Options:
             --name,-n <pod name>
-                Use a unique name for the new pod.
+                Set a unique name for the new pod.
 
-            --use,-u [ command, compose ]
-                Select whether you want to use a plain text command file or a compose.yml file for the new pod.
+            --command,-c
+                Use a podman command to run the pod.
+
+            --compose,-f
+                Use a compose.yml file to run the pod.
 
     whom pod rm
         Removes a pod from the repository.
@@ -26,7 +29,7 @@
                 Delete all the pods in the current repository. Permanent action.
 
     whom pod start
-        Enable the pod systemd service.
+        Activate the pod systemd service.
 
         Options:
             --name,-n <pod name>
@@ -36,7 +39,7 @@
                 Start all pods in the repository.
 
     whom pod stop
-        Disable the pod systemd service.
+        Deactivate the pod systemd service.
 
         Options:
             --name,-n <pod name>
