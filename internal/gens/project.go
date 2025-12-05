@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strings"
 )
 
 //go:embed resources/config.toml
@@ -17,6 +18,10 @@ var baseConfigToml string
 var basePodsToml string
 
 func GenerateBaseProject(name string) error {
+	if strings.TrimSpace(name) == "" {
+		return fmt.Errorf("project name cannot be empty")
+	}
+
 	// Checking if directory already exists and is not empty
 	if info, err := os.Stat(name); err == nil && info.IsDir() {
 		if entries, err := os.ReadDir(name); err == nil && len(entries) > 0 {

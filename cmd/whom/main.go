@@ -1,14 +1,9 @@
 package main
 
 import (
-	"log"
-
-	"github.com/nicolito128/whom/internal/gens"
+	"github.com/nicolito128/whom/pkg/cli"
 )
 
 func main() {
-	err := gens.GenerateBaseProject("test_project")
-	if err != nil {
-		log.Fatal(err)
-	}
+	cli.Run()
 }
