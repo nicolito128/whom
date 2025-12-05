@@ -1,0 +1,20 @@
+# Compilation files
+_output/
+
+# Environment files
+!.env*.example
+.env*
+
+# Testing
+test_project
+.tests
+
+# Git worktrees
+.worktrees/
+
+# Specifics
+.idea
+.vscode
+.DS_Store
+.vimrc
+*.diff

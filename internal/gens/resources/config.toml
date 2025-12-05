@@ -1,0 +1,14 @@
+[repository]
+
+type = "pods"
+
+name = ""
+
+description = ""
+
+url = ""
+
+author = ""
+
+maintainers = [ ]
+
