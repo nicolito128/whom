@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Credits: https://github.com/vmware-tanzu/velero/blob/main/hack/build.sh
 
 set -o errexit
 set -o nounset
