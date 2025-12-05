@@ -48,6 +48,19 @@
             --all
                 Stop all pods in the repository.
 
+    whom pods
+        List all active pods in the current repository.
+
+        Options:
+            --verbose,-v
+                Show detailed information about each pod.
+
+            --date,-d
+                Show the creation date of each pod.
+
+            --all
+                Show all pods, including inactive ones.
+
 ## Project structure
 
     repository/
