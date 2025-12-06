@@ -12,8 +12,11 @@
             --command,-c
                 Use a podman command to run the pod.
 
-            --compose,-f
+            --compose,-m
                 Use a compose.yml file to run the pod.
+
+            --edit,-e
+                If success, then open the pod file with $EDITOR
 
     whom pod rm <pod name>
         Removes a pod from the repository.
@@ -21,6 +24,9 @@
         Options:
             --danger-rm-all
                 Delete all the pods in the current repository. Permanent action.
+
+    whom pod edit <pod name>
+        Open the pod file to edit it using $EDITOR.
 
     whom pod start <pod name>
         Activate the pod systemd service.

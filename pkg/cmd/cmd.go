@@ -7,6 +7,7 @@ import (
 	"os"
 
 	initc "github.com/nicolito128/whom/pkg/cmd/init"
+	"github.com/nicolito128/whom/pkg/cmd/pod"
 	"github.com/nicolito128/whom/pkg/cmd/root"
 )
 
@@ -20,4 +21,5 @@ func Execute() {
 
 func init() {
 	rootCmd.AddCommand(initc.NewCommand())
+	rootCmd.AddCommand(pod.NewCommand())
 }

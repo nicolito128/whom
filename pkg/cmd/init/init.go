@@ -1,5 +1,5 @@
 /*
-Package init provides commands and utilities to initialize a new project.
+Package init provides a command to initialize a new repository.
 */
 package init
 

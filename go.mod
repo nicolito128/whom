@@ -2,7 +2,10 @@ module github.com/nicolito128/whom
 
 go 1.24.4
 
-require github.com/spf13/cobra v1.10.2
+require (
+	github.com/pelletier/go-toml/v2 v2.2.4
+	github.com/spf13/cobra v1.10.2
+)
 
 require (
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
